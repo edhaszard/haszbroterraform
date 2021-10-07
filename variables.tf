@@ -8,10 +8,10 @@ variable "vm_admin_password" {
   default     = ""
 }
 
-variable "ad_join_password" {
+#variable "ad_join_password" {
   
 }
 
-variable "workspace_key" {
+#variable "workspace_key" {
   
 }
