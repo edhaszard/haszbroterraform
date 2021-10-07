@@ -10,8 +10,8 @@ variable "vm_admin_password" {
 
 #variable "ad_join_password" {
   
-}
+#}
 
 #variable "workspace_key" {
   
-}
+#}
