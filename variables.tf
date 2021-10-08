@@ -10,6 +10,14 @@ variable "default_location" {
     default = "australiaeast"  
 }
 
+variable "vnet1_name" {
+  default = "1st test vnet"
+}
+
+variable "vnet1_subnet1_name" {
+  default = "1st test subnet"
+}
+
 #### The following variables are set in the Terraform Cloud workspace but need to be defined here
 
 variable "vm_admin_username"{
