@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-  default = "myTFRTestesourceGroup"
+  default = "mytestTFResourceGroup"
 }
 
 variable "default_location" {
