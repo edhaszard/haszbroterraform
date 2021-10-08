@@ -9,6 +9,5 @@ resource "azurerm_resource_group" "rg1" {
     project     = var.tag_project
     environment = var.tag_environment
     comments    = var.tag_comments
-    deployment  = var.tag_deployment
   }
 }
