@@ -20,8 +20,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "mytestTFResourceGroup"
-  location = "australiaeast"
+  name     = var.resource_group_name
+  location = var.default_location
   tags                =  {
     Environment = "Terraform Getting Started"
     Team        = "DevOps"
