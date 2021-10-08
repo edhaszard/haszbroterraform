@@ -12,5 +12,3 @@ variable "tag_environment" {
 }
 variable "tag_comments" {
 }
-variable "tag_deployment" {
-}
