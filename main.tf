@@ -45,3 +45,10 @@ module "resourcegr2" {
 ###################################################
 ## NETWORK MODULE
 ###################################################
+module "network1" {
+  source = ".//modules/az_network"
+  location = module.resourcegr2.location
+  network_resource_group_name = module.resourcegr2.name
+  vnet_name = var.vnet1_name
+  subnet_name = var.vnet1_subnet1_name
+}
