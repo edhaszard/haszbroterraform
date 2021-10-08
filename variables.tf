@@ -22,6 +22,9 @@ variable "vnet1_subnet1_name" {
   default = "1sttestsubnet"
 }
 
+variable "network_resource_group_name" {
+}
+
 #### The following variables are set in the Terraform Cloud workspace but need to be defined here
 
 variable "vm_admin_username"{
