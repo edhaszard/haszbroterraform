@@ -45,17 +45,17 @@ module "resourcegr2" {
 ###################################################
 ## NETWORK MODULE
 ###################################################
-#module "network1" {
-#  source = ".//modules/az_network"
-# location = module.resourcegr2.location
-#  resource_group_name = module.resourcegr2.resource_group_name
-#  vnet_name = var.vnet1_name
-#  subnet_name = var.vnet1_subnet1_name
-#}
-
-resource "azurerm_virtual_network" "vnet1" {
-  name = var.vnet1_name
+module "network1" {
+  source = ".//modules/az_network"
   location = module.resourcegr2.location
   resource_group_name = module.resourcegr2.rg_name
-  address_space = var.vnet1_addr_space
+  vnet_name = var.vnet1_name
+  subnet_name = var.vnet1_subnet1_name
 }
+
+#resource "azurerm_virtual_network" "vnet1" {
+#  name = var.vnet1_name
+#  location = module.resourcegr2.location
+#  resource_group_name = module.resourcegr2.rg_name
+#  address_space = var.vnet1_addr_space
+#}
