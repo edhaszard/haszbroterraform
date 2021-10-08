@@ -14,6 +14,10 @@ variable "vnet1_name" {
   default = "1st test vnet"
 }
 
+variable "vnet1_addr_space" {
+  default = ["10.0.0.0/16"]
+}
+
 variable "vnet1_subnet1_name" {
   default = "1st test subnet"
 }
