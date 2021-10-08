@@ -7,14 +7,13 @@ variable "default_location" {
 }
 
 #### The following variables are set in the Terraform Cloud workspace but need to be defined here
-variable "vnet1_name"{
-    
-}
 
 variable "vm_admin_username"{
-
+  description = "VM local admin username"
+  default = ""
 }
 
 variable "vm_admin_password"{
-
+  description = "VM local admin password"
+  default = ""
 }
