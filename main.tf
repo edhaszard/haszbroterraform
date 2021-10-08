@@ -25,6 +25,7 @@ resource "azurerm_resource_group" "rg" {
   tags                =  {
     Environment = "Terraform Getting Started"
     Team        = "DevOps"
+  }
 }
 
 resource "azurerm_virtual_network" "vnet" {
