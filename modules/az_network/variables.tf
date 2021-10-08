@@ -12,3 +12,6 @@ variable "location" {
 variable "subnet1_name" {
   description = "subnet name."
 }
+
+variable "vnet1_addr_space" {
+}
