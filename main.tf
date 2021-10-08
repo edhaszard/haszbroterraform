@@ -59,4 +59,3 @@ resource "azurerm_virtual_network" "vnet1" {
   resource_group_name = module.resourcegr2.rg_name
   address_space = var.vnet1_addr_space
 }
-

@@ -11,7 +11,7 @@ variable "default_location" {
 }
 
 variable "vnet1_name" {
-  default = "1st test vnet"
+  default = "1sttestVnet"
 }
 
 variable "vnet1_addr_space" {
@@ -19,7 +19,7 @@ variable "vnet1_addr_space" {
 }
 
 variable "vnet1_subnet1_name" {
-  default = "1st test subnet"
+  default = "1sttestsubnet"
 }
 
 #### The following variables are set in the Terraform Cloud workspace but need to be defined here
