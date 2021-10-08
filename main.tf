@@ -19,7 +19,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg1" {
   name     = var.resource_group_name
   location = var.default_location
   tags                =  {
@@ -28,9 +28,9 @@ resource "azurerm_resource_group" "rg" {
   }
 }
 
-#resource "azurerm_virtual_network" "vnet" {
-#  name                = "myTestTFVnet"
-#  address_space       = ["10.0.0.0/16"]
-#  location            = "australiaeast"
-#  resource_group_name = azurerm_resource_group.rg.name
-# }
+resource "azurerm_virtual_network" "vnet1" {
+  name                = var.vnet1_name
+  address_space       = ["10.0.0.0/16"]
+  location            = var.default_location
+  resource_group_name = azurerm_resource_group.rg1.name
+ }
