@@ -23,7 +23,7 @@ variable "vnet1_subnet1_name" {
 }
 
 variable "network_resource_group_name" {
-  default = ""
+  default = "mytestTFResourceGroup2"
 }
 
 #### The following variables are set in the Terraform Cloud workspace but need to be defined here
