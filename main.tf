@@ -55,7 +55,7 @@ module "resourcegr2" {
 
 resource "azurerm_virtual_network" "vnet1" {
   name = var.vnet1_name
-  location = module.resourcegr2.location
+  location = module.resourcegr.location
   resource_group_name = var.resource_group2_name
   address_space = var.vnet1_addr_space
 }
