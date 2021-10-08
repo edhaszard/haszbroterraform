@@ -7,8 +7,7 @@ variable "network_resource_group_name" {
 }
 
 variable "location" {
-  
-}
+  }
 
 variable "subnet1_name" {
   description = "subnet name."
