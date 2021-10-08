@@ -2,6 +2,10 @@ variable "resource_group_name" {
   default = "mytestTFResourceGroup"
 }
 
+variable "resource_group2_name" {
+  default = "mytestTFResourceGroup2"
+}
+
 variable "default_location" {
     default = "australiaeast"  
 }
