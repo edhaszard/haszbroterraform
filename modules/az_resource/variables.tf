@@ -3,12 +3,15 @@ variable "resource_group_name" {
 }
 
 #variable "location" {
-  description = "Location of the cluster."
-  default     = "westeurope"
+#  description = "Location of the cluster."
+#  default     = "westeurope"
 #}
-#variable "tag_project" {
-#}
+
+variable "tag_project" {
+}
+
 variable "tag_environment" {
 }
+
 variable "tag_comments" {
 }
