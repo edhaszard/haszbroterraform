@@ -7,7 +7,7 @@ variable "resource_group2_name" {
 }
 
 variable "default_location" {
-    default = "australiaeast"  
+    default = ""  
 }
 
 variable "vnet1_name" {
