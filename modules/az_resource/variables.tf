@@ -4,7 +4,7 @@ variable "resource_group_name" {
 
 variable "location" {
   description = "Location of the resource group"
-  default     = "westeurope"
+  default     = ""
 }
 
 variable "tag_project" {
