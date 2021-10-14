@@ -48,7 +48,7 @@ module "resourcegr2" {
 module "network1" {
   source = ".//modules/az_network"
   location = module.resourcegr2.location
-  network_resource_group_name = var.network_resource_group_name
+  network_resource_group_name = module.resourcegr2.rg_name
   vnet_name = var.vnet1_name
   vnet_addr_space = var.vnet1_addr_space
   subnet_name = var.vnet1_subnet1_name
