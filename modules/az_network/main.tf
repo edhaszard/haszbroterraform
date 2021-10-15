@@ -12,8 +12,8 @@ resource "azurerm_virtual_network" "vnet1" {
 ## Subnet
 ##########################################################
 resource "azurerm_subnet" "subnet1" {
-    name = var.subnet_name
+    name = var.subnet1_name
     virtual_network_name = azurerm_virtual_network.vnet1.name
     resource_group_name = var.network_resource_group_name
-    address_prefixes = var.subnet_prefix
+    address_prefixes = var.subnet1_prefix
 }
