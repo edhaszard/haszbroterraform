@@ -20,9 +20,9 @@ provider "azurerm" {
 }
 
 ###################################################
-## RESOURCE GROUP MODULE
+## RESOURCE GROUP MODULE(S)
 ###################################################
-module "resourcegr" {
+module "resourcegr1" {
   source              = ".//modules/az_resource" ### Logical path to module files
   location            = var.default_location
   resource_group_name = var.resource_group_name
@@ -43,7 +43,7 @@ module "resourcegr2" {
 }
 
 ###################################################
-## NETWORK MODULE
+## NETWORK MODULE(S)
 ###################################################
 module "network1" {
   source = ".//modules/az_network"
@@ -57,9 +57,14 @@ module "network1" {
   subnet2_prefix  = var.vnet1_subnet2_prefix
 }
 
-#resource "azurerm_virtual_network" "vnet1" {
-#  name = var.vnet1_name
+#module "network2" {
+#  source = ".//modules/az_network"
 #  location = module.resourcegr2.location
-#  resource_group_name = module.resourcegr2.rg_name
-#  address_space = var.vnet1_addr_space
+#  network_resource_group_name = module.resourcegr2.rg_name
+#  vnet_name = var.vnet1_name
+#  vnet_addr_space = var.vnet1_addr_space
+#  subnet1_name = var.vnet1_subnet1_name
+#  subnet1_prefix  = var.vnet1_subnet1_prefix
+#  subnet2_name = var.vnet1_subnet2_name
+#  subnet2_prefix  = var.vnet1_subnet2_prefix
 #}
