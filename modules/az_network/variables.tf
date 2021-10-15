@@ -24,6 +24,6 @@ variable "subnet2_name" {
   description = "subnet 2 name."
 }
 
-#variable "subnet1_prefix" {
-#  description = "subnet 2 prefix"
-#}
+variable "subnet2_prefix" {
+  description = "subnet 2 prefix"
+}
