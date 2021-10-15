@@ -51,8 +51,8 @@ module "network1" {
   network_resource_group_name = module.resourcegr2.rg_name
   vnet_name = var.vnet1_name
   vnet_addr_space = var.vnet1_addr_space
-  subnet_name = var.vnet1_subnet1_name
-  subnet_prefix  = var.vnet1_subnet1_prefix
+  subnet1_name = var.vnet1_subnet1_name
+  subnet1_prefix  = var.vnet1_subnet1_prefix
 }
 
 #resource "azurerm_virtual_network" "vnet1" {
