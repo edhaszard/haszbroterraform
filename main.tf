@@ -54,7 +54,7 @@ module "network1" {
   subnet1_name = var.vnet1_subnet1_name
   subnet1_prefix  = var.vnet1_subnet1_prefix
   subnet2_name = var.vnet1_subnet2_name
-  subnet2_prefix  = var.vnet1_subnet12_prefix
+  subnet2_prefix  = var.vnet1_subnet2_prefix
 }
 
 #resource "azurerm_virtual_network" "vnet1" {
