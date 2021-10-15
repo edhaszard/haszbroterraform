@@ -1,3 +1,5 @@
+# RG variables
+
 variable "resource_group_name" {
   default = "mytestTFResourceGroup1"
 }
@@ -10,6 +12,8 @@ variable "default_location" {
     default = "australiaeast"  
 }
 
+# vnet variables
+
 variable "vnet1_name" {
   default = "1sttestVnet"
 }
@@ -17,6 +21,8 @@ variable "vnet1_name" {
 variable "vnet1_addr_space" {
   default = ["10.0.0.0/16"]
 }
+
+# subnet variebles
 
 variable "vnet1_subnet1_name" {
   default = "testsubnet1"
@@ -34,11 +40,7 @@ variable "vnet1_subnet2_prefix" {
   default = ["10.0.1.0/24"]
 }
 
-#variable "network_resource_group_name" {
-#  default = "mytestTFResourceGroup2"
-#}
-
-#### The following variables are set in the Terraform Cloud workspace but need to be defined here
+# The following variables are set in the Terraform Cloud workspace but need to be defined here
 
 variable "vm_admin_username"{
   description = "VM local admin username"
