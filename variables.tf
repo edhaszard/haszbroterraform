@@ -61,7 +61,7 @@ variable "vnet2_subnet2_name" {
 }
 
 variable "vnet2_subnet2_prefix" {
-  default = ["10.0.1.0/24"]
+  default = ["10.1.1.0/24"]
 }
 
 # The following variables are set in the Terraform Cloud workspace but need to be defined here
