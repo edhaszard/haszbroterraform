@@ -9,9 +9,13 @@ variable "network_resource_group_name" {
 variable "location" {
   }
 
+variable "vnet_addr_space" {
+}
+
 variable "subnet_name" {
   description = "subnet name."
 }
 
-variable "vnet_addr_space" {
+variable "subnet_prefix" {
+  description = "subnet prefix"
 }

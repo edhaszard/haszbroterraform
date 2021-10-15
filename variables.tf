@@ -22,6 +22,10 @@ variable "vnet1_subnet1_name" {
   default = "1sttestsubnet"
 }
 
+variable "vnet1_subnet1_prefix" {
+  ['10.0.0.0/24']
+}
+
 #variable "network_resource_group_name" {
 #  default = "mytestTFResourceGroup2"
 #}
