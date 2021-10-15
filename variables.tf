@@ -33,7 +33,7 @@ variable "vnet2_addr_space" {
 # subnet variebles
 
 variable "vnet1_subnet1_name" {
-  default = "testsubnet1"
+  default = "vnet1sub1"
 }
 
 variable "vnet1_subnet1_prefix" {
@@ -41,7 +41,7 @@ variable "vnet1_subnet1_prefix" {
 }
 
 variable "vnet1_subnet2_name" {
-  default = "testsubnet2"
+  default = "vnet1sub2"
 }
 
 variable "vnet1_subnet2_prefix" {
