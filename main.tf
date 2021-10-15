@@ -53,7 +53,7 @@ module "network1" {
   vnet_addr_space = var.vnet1_addr_space
   subnet1_name = var.vnet1_subnet1_name
   subnet1_prefix  = var.vnet1_subnet1_prefix
-  subnet2_name = var.vnet1_subnet2_name
+  #subnet2_name = var.vnet1_subnet2_name
   subnet2_prefix  = var.vnet1_subnet12_prefix
 }
 
