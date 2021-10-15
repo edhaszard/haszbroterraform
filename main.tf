@@ -57,14 +57,14 @@ module "network1" {
   subnet2_prefix  = var.vnet1_subnet2_prefix
 }
 
-#module "network2" {
-#  source = ".//modules/az_network"
-#  location = module.resourcegr2.location
-#  network_resource_group_name = module.resourcegr2.rg_name
-#  vnet_name = var.vnet1_name
-#  vnet_addr_space = var.vnet1_addr_space
-#  subnet1_name = var.vnet1_subnet1_name
-#  subnet1_prefix  = var.vnet1_subnet1_prefix
-#  subnet2_name = var.vnet1_subnet2_name
-#  subnet2_prefix  = var.vnet1_subnet2_prefix
-#}
+module "network2" {
+  source = ".//modules/az_network"
+  location = module.resourcegr1.location
+  network_resource_group_name = module.resourcegr1.rg_name
+  vnet_name = var.vnet2_name
+  vnet_addr_space = var.vnet2_addr_space
+  subnet1_name = var.vnet2_subnet1_name
+  subnet1_prefix  = var.vnet2_subnet1_prefix
+  subnet2_name = var.vnet2_subnet2_name
+  subnet2_prefix  = var.vnet2_subnet2_prefix
+}
