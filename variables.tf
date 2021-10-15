@@ -19,7 +19,7 @@ variable "vnet1_addr_space" {
 }
 
 variable "vnet1_subnet1_name" {
-  default = "1sttestsubnet"
+  default = "testsubnet1"
 }
 
 variable "vnet1_subnet1_prefix" {
