@@ -13,9 +13,17 @@ variable "vnet_addr_space" {
 }
 
 variable "subnet1_name" {
-  description = "subnet name."
+  description = "subnet 1 name."
 }
 
 variable "subnet1_prefix" {
-  description = "subnet prefix"
+  description = "subnet 1 prefix"
 }
+
+variable "subnet2_name" {
+  description = "subnet 2 name."
+}
+
+#variable "subnet1_prefix" {
+#  description = "subnet 2 prefix"
+#}
