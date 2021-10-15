@@ -12,10 +12,10 @@ variable "location" {
 variable "vnet_addr_space" {
 }
 
-variable "subnet_name" {
+variable "subnet1_name" {
   description = "subnet name."
 }
 
-variable "subnet_prefix" {
+variable "subnet1_prefix" {
   description = "subnet prefix"
 }
