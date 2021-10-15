@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-  default = "mytestTFResourceGroup"
+  default = "mytestTFResourceGroup1"
 }
 
 variable "resource_group2_name" {
